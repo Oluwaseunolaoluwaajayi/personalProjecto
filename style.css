@@ -63,6 +63,11 @@
 }
 
 .hamburger {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 24px;
+  cursor: pointer;
   display: none;
   background-color: black;
 }
@@ -126,14 +131,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-right: 10px;
   }
 
   .hamburger {
     display: block;
-    font-size: 20px;
-    cursor: pointer;
-    position: absolute;
   }
 
   .navItems {
