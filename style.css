@@ -34,7 +34,6 @@
   /* width: 100%; */
 }
 .top h1 {
-  float: left;
   margin-left: 0;
   padding-left: 0;
 }
@@ -44,13 +43,14 @@
 }
 
 .navRight {
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   margin-left: auto;
 }
 
 .navItems {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -69,6 +69,7 @@
   cursor: pointer;
   border-radius: 10px;
   transition: background-color 0.2s ease;
+  margin-top: 10px;
 }
 
 .hamburger {
