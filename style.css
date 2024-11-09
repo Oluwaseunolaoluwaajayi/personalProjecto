@@ -13,23 +13,32 @@
 }
 
 .top-wrapper {
+  border-top: 5px solid #ff8c00;
   background-color: #333;
   color: #f7f7f7;
   padding: 1rem;
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 10;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
 }
+.top h1 {
+  float: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .top span {
   color: orange;
 }
@@ -114,6 +123,14 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+.foot {
+  text-align: center;
+  padding: 10px 0;
+  background-color: black;
+  border-top: 5px solid #ff8c00;
+  margin-top: 20px;
+  color: #ff8c00;
 }
 
 /* Responsive styling for mobile devices nav bar */
@@ -201,5 +218,13 @@
   }
   .mainPage p {
     font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .topNav {
+    flex-direction: row;
+    width: 100%;
+    /* Removed 'Width 2px' as it's invalid CSS */
   }
 }
